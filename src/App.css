@@ -1,0 +1,109 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  @apply bg-gray-800 border-none shadow-lg overflow-hidden rounded-xl;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
+  border-radius: 0.5rem !important; /* Force border-radius */
+}
+
+.btn-default {
+  @apply bg-purple-600 text-white hover:bg-purple-700;
+  border-radius: 0.5rem !important; /* Force border-radius */
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-outline {
+  @apply border bg-background hover:bg-accent hover:text-accent-foreground;
+  border-radius: 0.5rem !important; /* Force border-radius */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-lg {
+  @apply h-11 px-8 py-2 text-base;
+  border-radius: 0.5rem !important; /* Force border-radius */
+}
+
+.input {
+  @apply flex h-10 w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  border-radius: 0.5rem !important; /* Force border-radius */
+}
+
+.textarea {
+  @apply flex min-h-[80px] w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  border-radius: 0.5rem !important; /* Force border-radius */
+}
+
+.card-content {
+  @apply p-6 flex-grow;
+}
+
+.card-footer {
+  @apply p-6 pt-0;
+}
+
+/* Hero buttons */
+.hero-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.5);
+}
+
+/* Project buttons */
+.project-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.5);
+}
+
+/* Contact button */
+.contact-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.5);
+}
